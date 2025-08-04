@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Report a Problem</title>
+  <link rel="stylesheet" href="../css/report.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Report a Local Problem</h2>
+    <form action="#" method="POST">
+      <label for="title">Problem Title:</label>
+      <input type="text" id="title" name="title" required>
+
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" rows="4" required></textarea>
+
+      <label for="category">Category:</label>
+      <select id="category" name="category" required>
+        <option value="road">Road Issue</option>
+        <option value="electric">Electric Pole</option>
+        <option value="garbage">Garbage</option>
+        <option value="water">Water Leak</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" placeholder="e.g., Street Name or Area">
+
+      <label for="image">Upload Photo:</label>
+      <input type="file" id="image" name="image">
+
+      <button type="submit">Submit Report</button>
+    </form>
+  </div>
+</body>
+</html>
