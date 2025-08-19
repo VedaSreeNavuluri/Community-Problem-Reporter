@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Community Problem Reporter</title>
-  <link rel="stylesheet" href="../css/footer.css" />
-  <link rel="stylesheet" href="../css/newstyle.css">
+  <link rel="stylesheet" href="footer.css" />
+  <link rel="stylesheet" href="newstyle.css">
 </head>
 <body>
 
@@ -28,7 +28,7 @@
   </header>
 
   <div class="map-section">
-    <img src="../Assets/mapholder.jpg" alt="Map with markers" />
+    <img src="mapholder.jpg" alt="Map with markers" />
   </div>
 
 
@@ -36,7 +36,7 @@
     <h2>Reported Problems</h2>
 
     <div class="problem-card">
-      <img src="../Assets/pothle.jpg" alt="Pothole Image" />
+      <img src="pothle.jpg" alt="Pothole Image" />
       <div class="problem-info">
         <h3>Pothole on Main Street <span class="status unresolved">Unresolved</span></h3>
         <p>There is a large pothole in the middle of the road.</p>
@@ -45,7 +45,7 @@
     </div>
 
     <div class="problem-card">
-      <img src="../Assets/pole.jpeg" alt="Broken Pole Image" />
+      <img src="pole.jpeg" alt="Broken Pole Image" />
       <div class="problem-info">
         <h3>Broken Utility Pole <span class="status in-progress">In Progress</span></h3>
         <p>A utility pole has snapped and is leaning dangerously.</p>
@@ -54,7 +54,7 @@
     </div>
 
     <div class="problem-card">
-      <img src="../Assets/trash.jpg" alt="Overflowing Trash Image" />
+      <img src="trash.jpg" alt="Overflowing Trash Image" />
       <div class="problem-info">
         <h3>Overflowing Trash <span class="status resolved">Resolved</span></h3>
         <p>Excessive garbage piling up on the sidewalk.</p>
@@ -67,7 +67,7 @@
   <footer>
   <p>&copy; 2025 Local Connect. All rights reserved.</p>
   <p>
-    <a href="#">About Us</a> |
+    <a href="about.html">About Us</a> |
     <a href="#">Contact</a> |
     <a href="#">Terms of Use</a>
   </p>
@@ -87,7 +87,7 @@ function loadProblems() {
         card.classList.add("problem-card", problem.category);
 
         card.innerHTML = `
-            <img src="../Assets/default.jpg" alt="${problem.category} Image" />
+            <img src="default.jpg" alt="${problem.category} Image" />
             <div class="problem-info">
                 <h3>${problem.title} <span class="status ${problem.status}">${capitalize(problem.status)}</span></h3>
                 <p>${problem.description}</p>
